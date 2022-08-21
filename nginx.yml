@@ -1,7 +1,6 @@
 ---
 - hosts: all
   become: yes
-  SSH password: omoIKO@2015
   tasks:
     - name: ensure nginx is at the latest version
       apt: name=nginx state=latest update_cache=true
